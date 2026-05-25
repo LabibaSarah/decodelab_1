@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <h1 class="logo">TaskFlow</h1>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#tasks">Tasks</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-buttons">
+
+                <!-- Mobile Menu -->
+                <button id="menu-btn">☰</button>
+
+                <!-- Dark Mode -->
+                <button id="darkModeToggle">🌙</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <h2>Responsive Productivity Dashboard</h2>
+
+                <p>
+                    Organize your daily work with a clean and modern interface.
+                    Designed using HTML, CSS Grid, Flexbox, and JavaScript.
+                </p>
+
+                <button class="hero-btn">Get Started</button>
+
+            </div>
+
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="features">
+
+            <article class="card">
+
+                <h3>Responsive Design</h3>
+
+                <p>
+                    Works smoothly on mobile, tablet, and desktop devices.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h3>Modern UI</h3>
+
+                <p>
+                    Clean interface with modern color palette and typography.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h3>Interactive Tasks</h3>
+
+                <p>
+                    Add, complete, and manage tasks using JavaScript.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Task Section -->
+        <section class="task-section" id="tasks">
+
+            <h2>Task Manager</h2>
+
+            <!-- Search Task -->
+            <input
+                type="text"
+                id="searchTask"
+                placeholder="Search tasks..."
+            >
+
+            <!-- Task Counter -->
+            <h3 id="taskCounter">Total Tasks: 0</h3>
+
+            <!-- Task Input -->
+            <div class="task-input">
+
+                <label for="taskInput">Task Name</label>
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a task"
+                >
+
+                <!-- Due Date -->
+                <input type="date" id="dueDate">
+
+                <!-- Add Task -->
+                <button id="addTaskBtn">Add Task</button>
+
+            </div>
+
+            <!-- Task List -->
+            <ul id="taskList"></ul>
+
+            <!-- Empty Message -->
+            <p id="emptyMessage">No tasks available</p>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+
+            <h2>Contact Us</h2>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 TaskFlow Dashboard | Full Stack Project 1
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
